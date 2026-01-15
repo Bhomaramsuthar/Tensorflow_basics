@@ -1,0 +1,39 @@
+# --- 1. Virtual Environment (CRITICAL) ---
+.venv/
+venv/
+env/
+__pycache__/
+
+# --- 2. Jupyter Notebook Junk ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# --- 3. Large Data Files (From your screenshots) ---
+# This ignores the heavy data files but KEEPS your .ipynb notebooks
+*.gz
+*.zip
+*.h5
+*.tar
+*.png
+*.jpg
+*.jpeg
+
+# If you create specific folders JUST for data, add them here:
+# data/
+# datasets/
+
+# --- 4. TensorFlow Model Files (Module 6) ---
+# These files can be 100MB+ and will crash your push
+*.h5
+*.keras
+*.ckpt
+*.weights
+saved_model/
+
+# --- 5. TensorFlow Lite (Module 10) ---
+# Mobile model binaries
+*.tflite
+
+# --- 6. Python Cache ---
+__pycache__/
+*.pyc
